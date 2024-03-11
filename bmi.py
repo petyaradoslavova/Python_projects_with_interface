@@ -1,17 +1,3 @@
-import os
-import sys
-
-
-application_path = ''
-if getattr(sys,'frozen',False):
-    application_path = sys._MEIPASS
-else:
-    application_path= os.path.dirname(os.path.abspath(__file__))
-
-os.chdir(application_path)
-
-
-from customtkinter import  *
 from tkinter import StringVar,IntVar,Label
 from tkinter import messagebox
 import customtkinter
